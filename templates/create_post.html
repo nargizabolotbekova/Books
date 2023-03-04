@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Books</title>
+</head>
+<body>
+    <h1>Add Books</h1>
+    <form action="/create" method="post">
+        <p><label>Title: </label><input type="text" name="title" value="" required></p>
+        <p><label>Author: </label><input type="text" name="author" value="" required></p>
+        <p><label>Intro: </label><input type="text" name="intro" value="" required></p>
+        <p><label>Genre: </label><input type="text" name="genre" value="" required></p>
+        <p><label>Content: </label><textarea name="text" cols="30" rows="10" required></textarea></p>
+        <p><label>Price: </label><input type="text" name="price" value="" required></p>
+        <p><label>Availability: </label><input type="text" name="availability" value="" required></p>
+        <p><input type="submit" value="Save"></p>
+    </form>
+</body>
+</html>

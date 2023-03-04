@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+</head>
+<body>
+    <center>
+    <h1>All Books</h1>
+        {% for book in books %}
+        <h2>{{ books.title }}</h2>
+        <p>{{ books.intro }}</p>
+        <p><b>Date: {{ books.date.date() }}</b></p>
+        <button><a href="post/{{books.id}}">More</a></button><br>
+        {% endfor %}
+    </center>
+</body>
+</html>

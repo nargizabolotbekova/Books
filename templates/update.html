@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Page</title>
+</head>
+<body>
+    <h1>Update Page</h1>
+    <form method="post">
+        <p><label>Title: </label><input type="text" name="title" value="{{books.title}}" required></p>
+        <p><label>Intro: </label><input type="text" name="intro" value="{{article.intro}}" required></p>
+        <p><label>Content: </label><textarea name="text" cols="30" rows="10" required>{{books.text}}</textarea></p>
+        <p><input type="submit" value="Save changes"></p>
+    </form>
+</body>
+</html>
